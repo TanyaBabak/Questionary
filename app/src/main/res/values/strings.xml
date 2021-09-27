@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">PetProject</string>
+    <string name="login">Login</string>
+    <string name="main">Main</string>
+    <string name="questionary">Questionary</string>
+    <string name="settings">Settings</string>
+    <string name="splash">Splash</string>
+</resources>
