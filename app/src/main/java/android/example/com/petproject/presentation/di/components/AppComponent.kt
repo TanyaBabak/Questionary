@@ -3,6 +3,7 @@ package android.example.com.petproject.presentation.di.components
 import android.content.Context
 import android.example.com.petproject.MainActivity
 import android.example.com.petproject.presentation.di.modules.DataModule
+import android.example.com.petproject.presentation.ui.login.LoginFragment
 import android.example.com.petproject.presentation.ui.questionary.QuestionaryFragment
 import dagger.BindsInstance
 import dagger.Component
@@ -12,7 +13,8 @@ import javax.inject.Singleton
 @Singleton
 @Component(modules = [DataModule::class, ViewModelModule::class])
 interface AppComponent {
-    fun injectQuestionatyFragment(questionaryFragment: QuestionaryFragment)
+    fun inject(questionaryFragment: QuestionaryFragment)
+    fun inject(loginFragment: LoginFragment)
 
     @Component.Builder
     interface AppComponentBuilder {

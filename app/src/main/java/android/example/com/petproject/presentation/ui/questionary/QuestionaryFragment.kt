@@ -17,7 +17,7 @@ class QuestionaryFragment : BaseFragment(R.layout.fragment_questionary) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        Injector.applicationComponent!!.injectQuestionatyFragment(this)
+        Injector.applicationComponent!!.inject(this)
         viewModel = viewModel(viewModelProvider) {
 
         }
